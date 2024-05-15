@@ -1,0 +1,13 @@
+create table estudiantes (
+	id int AUTO_INCREMENT primary key,
+	nombres varchar(50),
+	apellidos varchar(50),
+	seminarios varchar(50),
+	confirmado varchar(3),
+	fecha_ins date
+);
+
+insert into estudiantes (nombres, apellidos, seminarios, confirmado, fecha_ins) values ('Zacarias', 'Vaca', 'Criptografia', 'si', '2024-05-15');
+insert into estudiantes (nombres, apellidos, seminarios, confirmado, fecha_ins) values ('Belen', 'Calle', 'Hacking etico', 'no', '2024-05-16');
+
+select * from estudiantes;
